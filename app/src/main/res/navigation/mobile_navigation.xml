@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sdij.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_todolist"
+        android:name="com.example.sdij.ui.todolist.TodolistFragment"
+        android:label="@string/menu_todolist"
+        tools:layout="@layout/fragment_todolist" />
+
+    <fragment
+        android:id="@+id/nav_stopwatch"
+        android:name="com.example.sdij.ui.stopwatch.StopwatchFragment"
+        android:label="@string/menu_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+
+    <fragment
+        android:id="@+id/nav_timer"
+        android:name="com.example.sdij.ui.timer.TimerFragment"
+        android:label="@string/menu_timer"
+        tools:layout="@layout/fragment_timer" />
+
+    <fragment
+        android:id="@+id/nav_teachers"
+        android:name="com.example.sdij.ui.teachers.TeachersFragment"
+        android:label="@string/menu_teachers"
+        tools:layout="@layout/fragment_teachers" />
+
+    <fragment
+        android:id="@+id/nav_curriculum"
+        android:name="com.example.sdij.ui.curriculum.CurriculumFragment"
+        android:label="@string/menu_curriculum"
+        tools:layout="@layout/fragment_curriculum" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.sdij.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
+</navigation>

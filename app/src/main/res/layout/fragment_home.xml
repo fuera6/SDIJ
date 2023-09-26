@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextClock
+        android:id="@+id/textClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:format12Hour="yyyy년 MM월 dd일 E요일"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <TextClock
+        android:id="@+id/textClock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textClock1"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:format12Hour="a hh:mm:ss"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textClock2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/timetable"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textClock2"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:text="               [MEMO]"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:fontFamily="@font/bmjua_ttf" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bmjua_ttf" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sdij_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="220dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/sdij_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/suneung_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sdij_fab"
+        android:layout_toRightOf="@+id/sdij_fab"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/suneung_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ebsi_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/suneung_fab"
+        android:layout_toRightOf="@+id/suneung_fab"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/ebsi_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/megastudy_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ebsi_fab"
+        android:layout_toRightOf="@+id/ebsi_fab"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/megastudy_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mimac_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/megastudy_fab"
+        android:layout_toRightOf="@+id/megastudy_fab"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/mimac_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/etoos_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mimac_fab"
+        android:layout_toRightOf="@+id/mimac_fab"
+        android:layout_marginLeft="50dp"
+        app:backgroundTint="#E6EEF7"
+        app:srcCompat="@drawable/etoos_fab" />
+
+</RelativeLayout>

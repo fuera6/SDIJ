@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.timer.TimerFragment">
+
+    <FrameLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="#e6eef7" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop = "30dp"
+                        android:layout_marginLeft = "390dp"
+                        android:text="시"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop = "30dp"
+                        android:layout_marginLeft = "490dp"
+                        android:text="분"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop = "30dp"
+                        android:layout_marginLeft = "590dp"
+                        android:text="초"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/hour"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop = "60dp"
+                        android:layout_marginLeft = "367dp"
+                        android:inputType="number"
+                        android:hint="00"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/min"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop = "60dp"
+                        android:layout_marginLeft = "467dp"
+                        android:inputType="number"
+                        android:hint="00"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/second"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop = "60dp"
+                        android:layout_marginLeft = "567dp"
+                        android:inputType="number"
+                        android:hint="00"
+                        android:textSize="40dp" />
+
+                    <Button
+                        android:id = "@+id/countdown_button"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop = "135dp"
+                        android:layout_marginLeft = "452dp"
+                        android:gravity="center"
+                        android:text = "시작 "
+                        android:backgroundTint="#555555"
+                        android:textSize="20dp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="#e6eef7" >
+
+                <Button
+                    android:id = "@+id/btn_korean"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin = "9dp"
+                    android:text="국어"
+                    android:textSize = "20dp"
+                    android:backgroundTint = "#555555"/>
+
+                <Button
+                    android:id = "@+id/btn_math"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin = "9dp"
+                    android:text="수학"
+                    android:textSize = "20dp"
+                    android:backgroundTint = "#555555"/>
+
+                <Button
+                    android:id = "@+id/btn_english"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin = "9dp"
+                    android:text="영어"
+                    android:textSize = "20dp"
+                    android:backgroundTint = "#555555"/>
+
+                <Button
+                    android:id = "@+id/btn_science"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin = "9dp"
+                    android:text="탐구"
+                    android:textSize = "20dp"
+                    android:backgroundTint = "#555555"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/listView_timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e6eef7" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/countdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="170dp"
+            android:text="00:00:00"
+            android:textSize="200dp" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="270dp"
+            android:textSize="30dp"
+            android:backgroundTint="#555555"
+            android:text="일시정지" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="540dp"
+            android:textSize="30dp"
+            android:backgroundTint="#555555"
+            android:text="취소" />
+
+    </FrameLayout>
+
+</LinearLayout>

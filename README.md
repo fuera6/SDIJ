@@ -16,3 +16,6 @@
 
 ## Environment
 * UI가 Tab에 최적화되어 있음
+
+## Directories & Files
+* SDIJ: 앱 소스코드
